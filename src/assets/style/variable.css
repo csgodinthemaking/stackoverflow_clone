@@ -1,0 +1,21 @@
+:root {
+  /* 色彩模式 */
+  color-scheme: LIGHT;
+
+  /* 调色盘 */
+  --c-primary: hsl(27, 90%, 55%);
+  --c-border: rgb(214, 217, 220);
+  --c-background: #fff;
+
+  /* 排版 */
+  --c-text: #0c0d0e;
+  --c-text-secondary: #525960;
+  --c-text-heading: #232629;
+  --c-text-link: #0074cc;
+
+  /* 过渡贝塞尔曲线 */
+  --transition: 340ms ease;
+
+  /* Shape */
+  --border-radius: 6px;
+}
