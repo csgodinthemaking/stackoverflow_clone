@@ -1,0 +1,29 @@
+@import "@/assets/style/mixins.scss";
+
+.customButton {
+  outline: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
+  @include flexCenter;
+}
+
+.primary {
+  color: var(--c-button-color);
+  background-color: var(--c-button);
+
+  &:hover {
+    background-color: var(--c-button-hover);
+  }
+}
+
+.secondary {
+  color: var(--c-button-secondary-color);
+  background-color: var(--c-button-secondary);
+
+  &:hover {
+    background-color: var(--c-button-secondary-hover);
+  }
+}

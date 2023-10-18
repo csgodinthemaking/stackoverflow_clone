@@ -3,8 +3,8 @@
   color-scheme: LIGHT;
 
   /* 调色盘 */
-  --c-primary: hsl(27, 90%, 55%);
-  --c-border: rgb(214, 217, 220);
+  --c-primary: #f48225;
+  --c-border: #d6d9dc;
   --c-background: #fff;
 
   /* 排版 */
@@ -12,6 +12,12 @@
   --c-text-secondary: #525960;
   --c-text-heading: #232629;
   --c-text-link: #0074cc;
+  --c-button: #0a95ff;
+  --c-button-hover: #0074cc;
+  --c-button-color: #fff;
+  --c-button-secondary: #e1ecf4;
+  --c-button-secondary-hover: #b3d3ea;
+  --c-button-secondary-color: #39739d;
 
   /* 过渡贝塞尔曲线 */
   --transition: 340ms ease;
