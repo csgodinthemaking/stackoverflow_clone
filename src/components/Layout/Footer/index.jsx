@@ -7,12 +7,14 @@ import { BsStackOverflow } from "react-icons/bs";
 import classes from "./style.module.scss";
 // Constants
 import { SOCIAL_MEDIA, LINKS } from "@/constants/footer";
+// Image
+import LogoSVG from "@/assets/image/LogoSVG";
 
 export default function Footer() {
   return (
     <footer className={classes.footer}>
       <div className="logo-wrap">
-        <BsStackOverflow className="logo" />
+        <LogoSVG />
       </div>
 
       {LINKS.map((item) => (

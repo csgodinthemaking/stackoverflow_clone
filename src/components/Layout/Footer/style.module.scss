@@ -10,8 +10,9 @@
     width: 64px;
 
     svg {
+      width: 40px;
+      height: 45px;
       cursor: pointer;
-      @include svgStyle($size: 40px, $color: var(--c-primary));
     }
   }
 
