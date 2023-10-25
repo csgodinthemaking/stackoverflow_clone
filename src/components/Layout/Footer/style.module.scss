@@ -1,7 +1,48 @@
+@import "@/assets/style/mixins.scss";
+
 .footer {
   width: 100%;
   padding: 32px 12px;
-  background-color: rgb(35, 38, 41);
-  display: flex;
-  align-items: center;
+  background-color: rgb(12, 13, 14);
+  @include flex($justifyContent: space-around);
+
+  :global .logo-wrap {
+    width: 64px;
+
+    svg {
+      cursor: pointer;
+      @include svgStyle($size: 40px, $color: var(--c-primary));
+    }
+  }
+
+  :global .list {
+    list-style: none;
+    @include flex($direction: column);
+
+    .title {
+      font-weight: 700;
+      color: #babfc5;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .item {
+      width: 100%;
+      padding: 4px 0;
+      color: #a7adb4;
+      cursor: pointer;
+    }
+  }
+
+  :global .social-media {
+    list-style: none;
+    @include flex($gap: 8px);
+
+    .item {
+      padding: 4px 0;
+      font-size: 11px;
+      color: #a7adb4;
+      cursor: pointer;
+    }
+  }
 }
