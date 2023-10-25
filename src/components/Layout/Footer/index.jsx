@@ -17,16 +17,18 @@ export default function Footer() {
         <LogoSVG />
       </div>
 
-      {LINKS.map((item) => (
-        <ul key={item.title} className="list">
-          <li className="title">{item.title}</li>
-          {item.links.map((link) => (
-            <li key={link} className="item">
-              {link}
-            </li>
-          ))}
-        </ul>
-      ))}
+      <div className="links">
+        {LINKS.map((item) => (
+          <ul key={item.title} className="list">
+            <li className="title">{item.title}</li>
+            {item.links.map((link) => (
+              <li key={link} className="item">
+                {link}
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
 
       <ul className="social-media">
         {SOCIAL_MEDIA.map((item) => (
