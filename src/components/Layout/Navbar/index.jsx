@@ -12,14 +12,14 @@ import { Button } from "@/components/common";
 
 import LogoPNG from "@/assets/image/logo-stackoverflow.png";
 import classes from "./style.module.scss";
+import "@/assets/style/itisit-container.css";
 //scss和css没有特大区别，可以写嵌套语法，mixin也是必用的。会让写样式效率提高
+
 export default function Navbar() {
   const [user, setUser] = useRecoilState(userAtom);
   const isAuthenticated = useMemo(() => {
     return user.username !== "";
   }, [user]);
-
-  console.log("user: ", user, isAuthenticated);
 
   const doLogin = () => {
     setUser({
@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     //alt是网络不好或因为其他原因无法显示图的时候，会显示里面的内容。另外也可以用作搜索的关键词。
-    <nav className={classes.navbar}>
+    <nav className={`itisit-container ${classes.navbar}`}>
       <img
         className="logo"
         src={LogoPNG}
