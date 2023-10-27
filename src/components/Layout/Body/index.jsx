@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 
-import classes from './style.module.scss';
+// Components
+import Sidebar from "./Sidebar";
+import Content from "./Content";
+
+// Scoped style
+import classes from "./style.module.scss";
+import "@/assets/style/itisit-container.css";
 
 export default function Body() {
   return (
-    <main className={classes.body}>
-      Body
+    <main className={`itisit-container ${classes.body}`}>
+      <Sidebar />
+      <Content />
     </main>
-  )
+  );
 }

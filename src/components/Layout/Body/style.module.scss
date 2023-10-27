@@ -1,7 +1,8 @@
+@import "@/assets/style/mixins.scss";
+
 .body {
   width: 100%;
   height: calc(100dvh - 55px);
   background-color: #fff;
-  display: flex;
-  align-items: center;
+  @include flex;
 }
