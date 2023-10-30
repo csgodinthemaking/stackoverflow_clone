@@ -18,26 +18,35 @@
 
   :global .nav-item {
     width: 100%;
-    border-right: 3px solid transparent;
-    transition: border-color var(--transition);
-    // border-right: 3px solid var(--c-primary);
+    height: 34px;
+    line-height: 34px;
+    padding-left: 4px;
+    border-right: 2px solid transparent;
+    transition: border-color var(--transition),
+      background-color var(--transition);
+
+    &:hover {
+      background-color: #f1f2f3;
+      border-right-color: var(--c-primary);
+    }
   }
 
   :global .public {
     width: 100%;
-    margin-top: 16px;
     @include flex($direction: column);
-
+    
     .title {
+      margin: 16px 0 4px 4px;
       font-size: 11px;
       color: var(--c-icon);
     }
 
     .nav-item {
+      // height - padding top/bottom
+      line-height: 26px;
       padding: 4px 4px 4px 30px;
 
       &:first-of-type {
-        padding-top: 10px;
         padding-left: 4px;
         @include flex($alignItems: center, $gap: 4px);
 
