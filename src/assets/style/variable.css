@@ -19,6 +19,7 @@
   --c-button-secondary: #e1ecf4;
   --c-button-secondary-hover: #b3d3ea;
   --c-button-secondary-color: #39739d;
+  --c-button-outlined-hover: #d6e8fa;
 
   /* 过渡贝塞尔曲线 */
   --transition: 340ms ease;
