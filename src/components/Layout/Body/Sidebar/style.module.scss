@@ -34,7 +34,7 @@
   :global .public {
     width: 100%;
     @include flex($direction: column);
-    
+
     .title {
       margin: 16px 0 4px 4px;
       font-size: 11px;
@@ -61,6 +61,79 @@
           @include svgStyle($size: 20px, $color: var(--c-text));
         }
       }
+    }
+  }
+
+  :global .community {
+    width: 100%;
+    margin-top: 16px;
+    @include flex($direction: column);
+
+    .row {
+      width: 100%;
+      @include flex($alignItems: center);
+
+      .label {
+        font-size: 11px;
+        color: #6b6b74;
+      }
+
+      svg {
+        cursor: pointer;
+        @include svgStyle($color: #6b6b74, $size: 14px);
+      }
+
+      &:first-child {
+        padding-right: 12px;
+        justify-content: space-between;
+      }
+
+      &:last-child {
+        padding: 8px 6px 8px 0;
+        gap: 4px;
+        cursor: pointer;
+
+        span {
+          font-size: 13px;
+          color: #3b4045;
+          transition: color var(--transition);
+        }
+
+        &:hover {
+          span {
+            color: var(--c-text);
+          }
+        }
+      }
+
+      .verified {
+        @include svgStyle($color: var(--c-primary), $size: 20px);
+      }
+      .discussions {
+        transform: translateY(2px);
+        @include svgStyle($size: 16px);
+      }
+      .work {
+        padding: 0 2px;
+        border-radius: var(--border-radius);
+        background-color: var(--c-primary);
+
+        svg {
+          @include svgStyle($color: #fff, $size: 13px);
+        }
+      }
+    }
+  }
+
+  :global .looking-for {
+    width: 100%;
+    margin-top: 8px;
+    padding-right: 8px;
+
+    button {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 12px;
     }
   }
 }
